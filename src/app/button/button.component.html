@@ -1,5 +1,8 @@
 <div>
-  <button [ngStyle]="{backgroundColor}">
-    Mon Bouton est {{ backgroundColor }}
+  <button
+    [ngStyle]="{backgroundColor}"
+    (click)="sendDatatoApp(backgroundColor)"
+  >
+    {{ backgroundColor }}
   </button>
 </div>

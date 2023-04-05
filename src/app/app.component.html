@@ -1,8 +1,24 @@
 <div>
-  <app-button [backgroundColor]="'red'"></app-button>
-  <app-button [backgroundColor]="'yellow'"></app-button>
-  <app-button [backgroundColor]="'green'"></app-button>
-  <app-button [backgroundColor]="'brown'"></app-button>
-  <app-button [backgroundColor]="'purple'"></app-button>
-  <app-button [backgroundColor]="'blue'"></app-button>
+  <app-button
+    (dataEmitFromButton)="dataReceiveFromButton($event)"
+    [backgroundColor]="'red'"
+  ></app-button>
+  <app-button
+    (dataEmitFromButton)="dataReceiveFromButton($event)"
+    [backgroundColor]="'yellow'"
+  ></app-button>
+  <app-button
+    (dataEmitFromButton)="dataReceiveFromButton($event)"
+    [backgroundColor]="'green'"
+  ></app-button>
+  <app-button
+    (dataEmitFromButton)="dataReceiveFromButton($event)"
+    [backgroundColor]="'brown'"
+  ></app-button>
+  <app-button
+    (dataEmitFromButton)="dataReceiveFromButton($event)"
+    [backgroundColor]="'purple'"
+  ></app-button>
 </div>
+
+<p *ngIf="receiveColor">{{ receiveColor }}</p>
