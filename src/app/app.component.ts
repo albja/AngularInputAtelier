@@ -15,6 +15,8 @@ export class AppComponent implements OnInit {
   }
   dataReceiveFromButton(event: string): void {
     this.receiveColor = event;
+    console.log(this.receiveColor);
+
 
   }
 }
